@@ -103,16 +103,6 @@
             }
         }
     </script>
-    <script>
-        function hideSensor() {
-            var x = document.getElementById("camera--sensor");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
 
 
 </head>
@@ -139,7 +129,7 @@
       <img src="//:0" alt="" id="camera--output">
 
       <!-- Camera trigger -->
-      <button id="camera--trigger" onclick="hideSensor()">Foto schießen</button>
+      <button id="camera--trigger">Foto schießen</button>
 
   </main>
 
