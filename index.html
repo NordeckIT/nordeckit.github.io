@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="BullShitZertifikator">
+    <meta name="apple-mobile-web-app-title" content="BullShitZertifikator">
+
+    <title>Bullshit Zertifikator</title>
+    <style>
+    body {
+    	font-family: Arial, Verdana;
+  	  font-size: 19px;
+	}
+	div {
+		border: 0px solid black;
+		margin: 5px;
+		padding:5px;
+	}
+	.cert_title {
+		font-size: 56px;
+		text-align:center;
+	}
+	.name {
+		font-size: 36px;
+		text-align:center;
+	}
+	.words {
+		font-size: 24px;
+		text-align:center;
+	}
+	.img {
+		text-align:center;
+	}
+
+    #camera, #camera--view, #camera--sensor, #camera--output{
+        position: center;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #camera--view, #camera--sensor, #camera--output{
+        transform: scaleX(-1);
+        filter: FlipH;
+    }
+    #camera--trigger{
+        width: 200px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 30px;
+        border: none;
+        padding: 15px 20px;
+        text-align: center;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+        position: fixed;
+        bottom: 30px;
+        left: calc(50% - 100px);
+        display: none;
+    }
+    .taken{
+        height: 100px!important;
+        width: 100px!important;
+        transition: all 0.5s ease-in;
+        border: solid 3px white;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+    </style>
+    <script src="BullShitZertifikator.json"></script>
+    <script src="wordsReader.js"></script>
+    <script src="app.js"></script>
+    <script src="adapter.js"></script>
+    <script src="sw.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        function hideButton() {
+            var x = document.getElementById("camera--trigger");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+<body>
+  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
+
+  <button type="button" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
+<div id="cert">
+        <div class="cert_title" id="certTitle"></div>
+        <div class="name" id="name"></div>
+        <div class="words" id="words"></div>       
+ </div>
+<!--<div class="img"><img src="babo.jpeg" width="500"/></div>-->
+  <!-- Camera -->
+  <main id="camera">
+
+      <!-- Camera sensor -->
+      <canvas id="camera--sensor"></canvas>
+
+      <!-- Camera view -->
+      <video id="camera--view" autoplay playsinline></video>
+
+      <!-- Camera output -->
+      <img src="//:0" alt="" id="camera--output">
+
+      <!-- Camera trigger -->
+      <button id="camera--trigger">Foto schießen</button>
+
+  </main>
+
+
+</body>
+</html>

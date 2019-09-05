@@ -1,0 +1,11 @@
+﻿var textComponents = [
+{ 
+"title":"Online Qualifikant;Systemdesigner/in;Katalysator;Perserezipetator;Katalyseinspirator;Exzellenz Berater;Excel Lens Berater;Kurbelantreiber/in;Mechametaintronisator;Instrumentator;Agilisator;Scrumbanifikant;Kanbanisator;KVP Master;Supifikant;Zukunftsforscher;PSPOPPPOE XIII;SM - Scrum Macher",
+"name":"Peter Müller;Katrin Meyer",
+"verb":"erhält hiermit;bekommt in Ehren überreicht:;erhält als Auszeichnung:;bescheinigen wir hiermit;hat ehrlich verdient:;bekommt unter höchster Anerkennung;kriegt;hat sich heute bewiesen und erhält",
+"what":"das Zertifikat;unser Zeugnis;diesen Schein;das positive Testergebnis;das Abschlusszeugnis;die Praxisteilbescheinigung;die Leistungsbestätigung;den Gesellenbrief;den Doktortitel;den Titel",
+"how":"für außergewöhnliche;für unnachgiebige intrinsische;für kontinuierliche;für respektvolle;für mutige;für vertrauensvolle;für nachhaltige;für zukunftsorientierte;für kostenbewusste;für erfolgreiche;für 100% tige ;für konsequent agile;für zielbewusste;für effektive;für time to market optimierte",
+"whatagain":"Verbesserung;Optimierung;Skalierung;Unterstützung;Steigerung;Wertoptimierung;Spezialisierung;Wertmaximierung;Rentabilitätsverbesserung;Realitätsverbesserung",
+"whatfor":"im selbstorganisierten Sort Algorythmus Wettbewerb.;der Effizienz.;der agilen Weltverbesserung;des allumfassenden Parallelweltenvergleichs.;der digitalen Exzellenz.;der robusten Unternehmensentwicklung.;der crossfunktionalen Teamausrichtung.;der inhouse Networking Capabilities.;der Hamburger Straßenähnlichkeit.;der künstlichen Intelligenz.;des KI Business Value Hubs.;der effektiven machine learning application integration.;des Gamification Ansatzes.;des Collaboration Pokers.;des Doppelkopfwettbewerbes.;der Communities of Practice (CoP). ;der Sprintzielerreichung.;der selbstorganisierten Organisationsentwicklung.;des Unternehmenskulturwandels.;der eigenen servant leader Haltung.;der kritischen Selbstbetrachtung.;der agilen Transition.;des delegation Boards.;des Leadership Coachings.;der betrieblichen KPIs.;der Customer Experience.;der User Experience.;der Customer Journey."
+}
+]
