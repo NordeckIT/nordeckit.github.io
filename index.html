@@ -37,14 +37,26 @@
 	}
 
     #camera, #camera--view, #camera--sensor, #camera--output{
-        position: center;
+        position: relative;
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    #camera--view, #camera--sensor, #camera--output{
+    #camera--view{
         transform: scaleX(-1);
         filter: FlipH;
+
+    }
+    #camera--output{
+        transform: scaleX(-1);
+        filter: FlipH;
+        display: none;
+    }
+    #camera--sensor{
+        transform: scaleX(-1);
+        filter: FlipH;
+
+
     }
     #camera--trigger{
         width: 200px;
@@ -71,13 +83,16 @@
         right: 20px;
         z-index: 2;
     }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
     </style>
     <script src="BullShitZertifikator.json"></script>
     <script src="wordsReader.js"></script>
-    <script src="app.js"></script>
-    <script src="adapter.js"></script>
-    <script src="sw.js"></script>
-    <script src="jquery-3.3.1.js"></script>
+
     <script>
         function hideButton() {
             var x = document.getElementById("camera--trigger");
@@ -88,12 +103,23 @@
             }
         }
     </script>
+    <script>
+        function hideSensor() {
+            var x = document.getElementById("camera--sensor");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 
 </head>
 <body>
   <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
 
-  <button type="button" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
+  <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
 <div id="cert">
         <div class="cert_title" id="certTitle"></div>
         <div class="name" id="name"></div>
@@ -113,10 +139,12 @@
       <img src="//:0" alt="" id="camera--output">
 
       <!-- Camera trigger -->
-      <button id="camera--trigger">Foto schießen</button>
+      <button id="camera--trigger" onclick="hideSensor()">Foto schießen</button>
 
   </main>
 
-
+  <script src="app.js"></script>
+  <script src="adapter.js"></script>
+  <script src="sw.js"></script>
 </body>
 </html>

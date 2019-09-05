@@ -1,3 +1,8 @@
+window.onload = function () {
+    document.getElementById("camera--sensor").classList.add("hide");
+};
+
+
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
 var track = null;
@@ -5,7 +10,7 @@ var track = null;
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
-    cameraTrigger = document.querySelector("#camera--trigger");
+    cameraTrigger = document.querySelector("#camera--trigger")
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -22,15 +27,24 @@ function cameraStart() {
 
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
+    cameraSensor.classList.remove("hide");
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    // track.stop();
+
+    //turn off cam and remove the frame, cam button+trigger+cert gen
+    cameraView.classList.add("hide");
+    track.stop();
+    document.getElementById("berechnen").classList.add("hide");
+    document.getElementById("openCam").classList.add("hide");
+    cameraTrigger.style.display="none";
+
 };
 
-/*// Start the video stream when the window loads
+
+/*   // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);*/
 
 
