@@ -19,6 +19,8 @@
 		border: 0px solid black;
 		margin: 5px;
 		padding:5px;
+        width: 100%;
+        vertical-align: middle;
 	}
 	.cert_title {
 		font-size: 56px;
@@ -27,6 +29,10 @@
 	.name {
 		font-size: 36px;
 		text-align:center;
+        border-color: black;
+        border-left: none;
+        border-right: none;
+        border-top: none;
 	}
 	.words {
 		font-size: 24px;
@@ -90,7 +96,7 @@
             display: block;
         }
     </style>
-    <script src="BullShitZertifikator.json"></script>
+    <script src="BullShitZertifikator.js"></script>
     <script src="wordsReader.js"></script>
 
     <script>
@@ -112,7 +118,8 @@
   <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
 <div id="cert">
         <div class="cert_title" id="certTitle"></div>
-        <div class="name" id="name"></div>
+<!--        <div class="name" id="name"></div>-->
+    <form style="text-align: center"> <input type="text" class="name" id="name"> </form>
         <div class="words" id="words"></div>       
  </div>
 <!--<div class="img"><img src="babo.jpeg" width="500"/></div>-->
