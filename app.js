@@ -37,8 +37,8 @@ cameraTrigger.onclick = function() {
     //turn off cam and remove the frame, cam button+trigger+cert gen
     cameraView.classList.add("hide");
     track.stop();
-    document.getElementById("berechnen").classList.add("hide");
-    document.getElementById("openCam").classList.add("hide");
+    // document.getElementById("berechnen").classList.add("hide");
+    // document.getElementById("openCam").classList.add("hide");
     cameraTrigger.style.display="none";
 
 };

@@ -21,6 +21,13 @@
         background-color: #bde8e8;
         background-repeat: no-repeat;
 	}
+
+    @media print {
+        #berechnen, #openCam{
+            display: none;
+        }
+    }
+
 	div {
 		border: 0px solid black;
         width: auto;
@@ -49,7 +56,18 @@
         padding-left: 56px;
         padding-right: 56px;
         padding-bottom: 30px;
+
 	}
+    select, form, input{
+        background-color: transparent !important;
+        autocorrect="off";
+        spellcheck="false";
+
+    }
+    #berechnen{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 	.img {
 		text-align:center;
 	}
@@ -59,10 +77,17 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+
     }
     #camera--view{
         transform: scaleX(-1);
         filter: FlipH;
+        height: auto!important;
+        max-height: 480px !important;
+        width: 600px!important;
+        max-width: 600px !important;
+        position: relative;
+        left: 87px;
 
     }
     #camera--output{
@@ -99,7 +124,9 @@
     }
     .taken{
         height: auto!important;
+        max-height: 480px !important;
         width: 600px!important;
+        max-width: 600px !important;
         transition: all 0.5s ease-in;
         border: solid 3px white;
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
@@ -129,13 +156,14 @@
                 x.style.display = "block";
             }
         }
+
     </script>
 
 
 </head>
 <body>
 
-    <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
+  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
 
   <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
 <div id="cert">
