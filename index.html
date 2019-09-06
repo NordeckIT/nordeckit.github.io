@@ -14,17 +14,23 @@
     body {
     	font-family: Arial, Verdana;
   	  font-size: 19px;
+        margin: 0;
+        padding: 0;
+        background-image: url("Zertifikat_Solutions_v01b.png");
+        background-size: cover;
+        background-color: #bde8e8;
+        background-repeat: no-repeat;
 	}
 	div {
 		border: 0px solid black;
-		margin: 5px;
-		padding:5px;
-        width: 100%;
+        width: auto;
         vertical-align: middle;
 	}
 	.cert_title {
 		font-size: 56px;
 		text-align:center;
+        margin-top: 7%;
+        padding-bottom: 2%;
 	}
 	.name {
 		font-size: 36px;
@@ -40,12 +46,15 @@
 	.words {
 		font-size: 24px;
 		text-align:center;
+        padding-left: 56px;
+        padding-right: 56px;
+        padding-bottom: 30px;
 	}
 	.img {
 		text-align:center;
 	}
 
-    #camera, #camera--view, #camera--sensor, #camera--output{
+    #camera, #camera--view{
         position: relative;
         height: 100%;
         width: 100%;
@@ -59,11 +68,17 @@
     #camera--output{
         transform: scaleX(-1);
         filter: FlipH;
-        display: none;
+        /*display: none;*/
     }
     #camera--sensor{
         transform: scaleX(-1);
         filter: FlipH;
+        margin-top: 6%;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: none;
 
 
     }
@@ -83,14 +98,15 @@
         display: none;
     }
     .taken{
-        height: 100px!important;
-        width: 100px!important;
+        height: auto!important;
+        width: 600px!important;
         transition: all 0.5s ease-in;
         border: solid 3px white;
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-        top: 20px;
-        right: 20px;
+        top: 30%;
+        right: 80px;
         z-index: 2;
+        position: absolute;
     }
         .hide{
             display: none;
@@ -98,7 +114,9 @@
         .show{
             display: block;
         }
-    </style>
+
+
+        </style>
     <script src="BullShitZertifikator.js"></script>
     <script src="wordsReader.js"></script>
 
@@ -116,16 +134,18 @@
 
 </head>
 <body>
-  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
+
+    <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
 
   <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
 <div id="cert">
         <div class="cert_title" id="certTitle"></div>
 <!--        <div class="name" id="name"></div>-->
-    <form style="text-align: center"> <input type="text" class="name" id="name"> </form>
+    <form style="text-align: center; padding-bottom: 4%; background-color: transparent"> <input type="text" class="name" id="name"> </form>
         <div class="words" id="words"></div>       
  </div>
-<!--<div class="img"><img src="babo.jpeg" width="500"/></div>-->
+
+
   <!-- Camera -->
   <main id="camera">
 
@@ -142,6 +162,7 @@
       <button id="camera--trigger">Foto schießen</button>
 
   </main>
+
 
   <script src="app.js"></script>
   <script src="adapter.js"></script>
