@@ -1,5 +1,7 @@
 window.onload = function () {
     document.getElementById("camera--sensor").classList.add("hide");
+    document.getElementById("camera--view").style.paddingTop="110px";
+    document.getElementById("camera--output").style.paddingTop="110px";
 };
 
 
@@ -43,10 +45,13 @@ cameraTrigger.onclick = function() {
     cameraTrigger.style.display="none";
 };
 
+//hides all top buttons
 UIhide.onclick = function () {
     document.getElementById("hideUI").classList.add("hide");
     document.getElementById("openCam").classList.add("hide");
     document.getElementById("berechnen").classList.add("hide");
+    document.getElementById("camera--view").style.paddingTop="63px";
+    document.getElementById("camera--output").style.paddingTop="63px";
 
 };
 

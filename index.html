@@ -53,7 +53,7 @@
         position: absolute;
         top: 531px;
         z-index: 12;
-        right: 215px;
+        right: 195px;
 	}
 	.words {
 		font-size: 24px;
@@ -101,12 +101,13 @@
         max-width: 600px !important;
         position: relative;
         left: 27%;
-
+        padding-top: 45px;
     }
     #camera--output{
         transform: scaleX(-1);
         filter: FlipH;
         /*display: none;*/
+        padding-top: 42px;
     }
     #camera--sensor{
         transform: scaleX(-1);
@@ -142,8 +143,8 @@
         /*max-width: 600px !important;*/
         max-width: 360px !important;
         transition: all 0.5s ease-in;
-        border: solid 3px white;
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+        /*border: solid 3px white;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);*/
         top: 30%;
         left: 27%;
         z-index: 8;
@@ -189,7 +190,9 @@
         position: absolute;
     }*/
 
-
+        .invisible{
+            visibility: hidden;
+        }
         .hide{
             display: none;
         }
@@ -228,17 +231,21 @@
                 x.style.display = "block";
             }
         }
+        function CertPadding() {
+            document.getElementById("camera--view").style.paddingTop="45px";
+            document.getElementById("camera--output").style.paddingTop="45px";
+        }
     </script>
 
 
 </head>
 <body>
 
-  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat ändern</button>
+  <button type="button" id="berechnen" onclick="generateCert(); CertPadding();">Zertifikat ändern</button>
 
   <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
 
-  <button type="button" id="hideUI" onclick="hideallbuttons()"> Verstecke Elemente</button>
+  <button type="button" id="hideUI"> Verstecke Elemente</button>
 <div id="cert">
         <div class="cert_title" id="certTitle"></div>
 <!--        <div class="name" id="name"></div>-->
