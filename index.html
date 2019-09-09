@@ -205,15 +205,16 @@
             right: 50px;
             width: auto;
             height: 195px;
+            z-index: 11;
         }
     #frame{
         height: auto!important;
-        max-height: 480px !important;
+       /* max-height: 480px !important;*/
         width: auto;
         max-width: 444px !important;
         transition: all 0.5s ease-in;
         top: 24%;
-        left: 23%;
+        left: 20%;
         z-index: 10;
         position: absolute;
     }
@@ -232,8 +233,8 @@
             }
         }
         function CertPadding() {
-            document.getElementById("camera--view").style.paddingTop="47px";
-            document.getElementById("camera--output").style.paddingTop="47px";
+            document.getElementById("camera--view").style.paddingTop="50px";
+            document.getElementById("camera--output").style.paddingTop="50px";
         }
     </script>
 
@@ -254,6 +255,10 @@
 
     <img id="stamp" src="thumbnail_Zertifikat_bommel.png">
     <img id="frame" src="pic-fram-large.png">
+
+
+
+
  </div>
 
 
