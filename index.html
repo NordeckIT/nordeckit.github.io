@@ -18,7 +18,8 @@
         padding: 0;
         background-image: url("Zertifikat_Solutions_v01b.png");
         background-size: 100% 950px;
-        background-color: #bde8e8;
+       /* background-color: #bde8e8;*/
+        background-color: #bee9e9;
         background-repeat: no-repeat;
 	}
 
@@ -49,13 +50,20 @@
         border-right: none;
         border-top: none;
         padding: 0;
+        position: absolute;
+        top: 531px;
+        z-index: 12;
+        right: 215px;
 	}
 	.words {
 		font-size: 24px;
 		text-align:center;
         padding-left: 56px;
-        padding-right: 56px;
-        padding-bottom: 30px;
+        /*padding-right: 56px;
+        padding-bottom: 30px;*/
+        padding-right: 195px;
+        position: absolute;
+        bottom: 170px;
 
 	}
     select, form, input{
@@ -188,7 +196,24 @@
         .show{
             display: block;
         }
-
+        #stamp{
+            position: absolute;
+            bottom: 80px;
+            right: 50px;
+            width: auto;
+            height: 195px;
+        }
+    #frame{
+        height: auto!important;
+        max-height: 480px !important;
+        width: auto;
+        max-width: 444px !important;
+        transition: all 0.5s ease-in;
+        top: 24%;
+        left: 20%;
+        z-index: 10;
+        position: absolute;
+    }
 
         </style>
     <script src="BullShitZertifikator.js"></script>
@@ -218,7 +243,10 @@
         <div class="cert_title" id="certTitle"></div>
 <!--        <div class="name" id="name"></div>-->
     <form style="text-align: center; padding-bottom: 4%; background-color: transparent"> <input type="text" class="name" id="name"> </form>
-        <div class="words" id="words"></div>       
+        <div class="words" id="words"></div>
+
+    <img id="stamp" src="thumbnail_Zertifikat_bommel.png">
+    <img id="frame" src="pic-frame.png">
  </div>
 
 
