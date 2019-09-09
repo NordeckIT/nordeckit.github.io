@@ -10,7 +10,8 @@ var track = null;
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
-    cameraTrigger = document.querySelector("#camera--trigger")
+    cameraTrigger = document.querySelector("#camera--trigger"),
+    UIhide = document.querySelector("#hideUI")
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -40,9 +41,14 @@ cameraTrigger.onclick = function() {
     // document.getElementById("berechnen").classList.add("hide");
     // document.getElementById("openCam").classList.add("hide");
     cameraTrigger.style.display="none";
-
 };
 
+UIhide.onclick = function () {
+    document.getElementById("hideUI").classList.add("hide");
+    document.getElementById("openCam").classList.add("hide");
+    document.getElementById("berechnen").classList.add("hide");
+
+};
 
 /*   // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);*/

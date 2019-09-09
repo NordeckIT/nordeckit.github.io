@@ -1,29 +1,11 @@
-﻿title;name;verb;what;how;whatagain;whatfor
-Online Qualifikant;Peter Müller;erhält hiermit;das Zertifikat;für außergewöhnliche;Verbesserung;im selbstorganisierten Sort Algorythmus Wettbewerb.
-Systemdesigner/in;Katrin Meyer;bekommt in Ehren übberreicht:;unser Zeugnis;für unnachgiebige intrinsische;Optimierung;der Effizienz.
-Katalysator;;erhält als Auszeichnung:;diesen Schein;für kontinuierliche;Skalierung;der agilen Weltverbesserung
-Perserezipetator;;bescheinigen wir hiermit;das positive Testergebnis;für respektvolle;Unterstützung;des allumfassenden Parallelweltenvergleichs.
-Katalyseinspirator;;hat ehrlich verdient:;das Abschlusszeugnis;für mutige;Steigerung;der digitalen Exzellenz.
-Exzellenz Berater;;bekommt unter höchster Anerkennung;die Praxisteilbescheinigung;für vertrauensvolle;Wertoptimierung;der robusten Unternehmensentwicklung.
-Excel Lens Berater;;kriegt;die Leistungsbestätigung;für nachhaltige;Spezialisierung;der crossfunktionalen Teamausrichtung.
-Kurbelantreiber/in;;hat sich heute bewiesen und erhält;den Gesellenbrief;für zukunftsorientierte;Wertmaximierung;der inhouse Networking Capabilities.
-Mechametaintronisator;;;den Doktortitel;für kostenbewusste;Rentabilitätsverbesserung;der Hamburger Straßenähnlichkeit.
-Instrumentator;;;den Titel;für erfolgreiche;Realitätsverbesserung;der künstlichen Intelligenz.
-Agilisator;;;;für 100% tige ;;des KI Business Value Hubs.
-Scrumbanifikant;;;;für konsequent agile;;der effektiven machine learning application integration.
-Kanbanisator;;;;für zielbewusste;;des Gamification Ansatzes.
-KVP Master;;;;für effektive;;des Collaboration Pokers.
-Supifikant;;;;für time to market optimierte;;des Doppelkopfwettbewerbes.
-Zukunftsforscher;;;;;;der Communities of Practice (CoP). 
-PSPOPPPOE XIII;;;;;;der Sprintzielerreichung.
-SM - Scrum Macher;;;;;;der selbstorganisierten Organisationsentwicklung.
-;;;;;;des Unternehmenskulturwandels.
-;;;;;;der eigenen servant leader Haltung.
-;;;;;;der kritischen Selbstbetrachtung.
-;;;;;;der agilen Transition.
-;;;;;;des delegation Boards.
-;;;;;;des Leadership Coachings.
-;;;;;;der betrieblichen KPIs.
-;;;;;;der Customer Experience.
-;;;;;;der User Experience.
-;;;;;;der Customer Journey.
+﻿var textComponents = [
+{
+"title":"Servant Practitionner;Systemdesigner/in;Katalysator/in;Perserezipetator/in;Exzellenz Berater/in;Kurbelantreiber/in;Mechametaintronisator/in;Agilist/in;Scrumbanifikant/in;Kanbanisator/in;KVP Master;Supifikant/in;Zukunftsforscher/in;PSPOPPPOE III;SM - Sachen Macher/in;Agile Agent;Transparenz Lead;Vertrauensschaffner/in;Change Multiplikator/in;Maitre/Maitresse du Scrum;Maitre/Maitresse du Kanban;Missis/Mister Agility",
+"name":"Peter Müller;Katrin Meyer",
+"verb":"erhält hiermit;bekommt in Ehren überreicht:;erhält als Auszeichnung:;bescheinigen wir hiermit;hat ehrlich verdient:;bekommt unter höchster Anerkennung;kriegt;hat sich heute bewiesen und erhält;hat am heutigen Tage erlangt",
+"what":"das Zertifikat;unser Zeugnis;diesen Schein;das positive Testergebnis;das Abschlusszeugnis;die Praxisteilbescheinigung;die Leistungsbestätigung;den Gesellentitel;den Doktorbrief;den Titel;die Teilnahmebestätigung;die Beglaubigung;die Urkunde;das Testat",
+"how":"für außergewöhnliche;für unnachgiebige;für kontinuierliche;für respektvolle;für mutige;für vertrauensvolle;für nachhaltige;für zukunftsorientierte;für kostenbewusste;für erfolgreiche;für 100% tige ;für konsequent agile;für zielbewusste;für effektive;für time to market optimierte;für fokussierte;für transparente;für engagierte;für überzeugende;für leichtgewichtige;für selbstverpflichtende;für flexible;für sichtbare;für empirische;für experimentelle;für anpassungsfähige;für intrinsische",
+"whatagain":"Verbesserung;Optimierung;Skalierung;Unterstützung;Steigerung;Wertoptimierung;Spezialisierung;Wertmaximierung;Rentabilitätsverbesserung;Realitätsverbesserung;Akkumulation;Sublimierung;Restaurierung;Veränderung;Modifikation;Übertragung;Veredelung;Verschönerung;Umgestaltung",
+"whatfor":"der agilen Weltverbesserung.;der digitalen Exzellenz.;der robusten Unternehmensentwicklung.;der crossfunktionalen Teamausrichtung.;der inhouse Networking Capabilities.;des KI Business Value Hubs.;der effektiven machine learning application integration.;des Gamification Ansatzes.;des Collaboration Pokers.;der Communities of Practice (CoP). ;der Sprintzielerreichung.;der selbstorganisierten Organisationsentwicklung.;des Unternehmenskulturwandels.;der eigenen Servant Leader Haltung.;der kritischen Selbstbetrachtung.;der agilen Transition.;des Leadership Coachings.;der betrieblichen KPIs.;der Customer Experience.;der User Experience.;der Customer Journey.;des Kollaborations-Konundrums.;der Geschwindigkeits-Anomalie.;der kollektiven Konvergenz.;des kontunierlichen Verbesserungs Paradoxon.;der Sparring Hypothese.;der iterativen Synergien.;des Feedbackloops.;der Prognosesicherheit.;des Wissenstransfers.;des Continiuous Delivery Prozesses."
+}
+]

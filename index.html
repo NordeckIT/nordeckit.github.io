@@ -17,7 +17,7 @@
         margin: 0;
         padding: 0;
         background-image: url("Zertifikat_Solutions_v01b.png");
-        background-size: cover;
+        background-size: 100% 950px;
         background-color: #bde8e8;
         background-repeat: no-repeat;
 	}
@@ -64,9 +64,13 @@
         spellcheck="false";
 
     }
-    #berechnen{
-        margin-left: 60px;
-        margin-right: 60px;
+    #berechnen, #openCam, #hideUI{
+        margin-left: 112px;
+        background-color: #00a5e4;
+        color: white;
+        border: none;
+        text-align: center;
+
     }
 	.img {
 		text-align:center;
@@ -199,16 +203,17 @@
                 x.style.display = "block";
             }
         }
-
     </script>
 
 
 </head>
 <body>
 
-  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat</button>
+  <button type="button" id="berechnen" onclick="generateCert();">Zertifikat ändern</button>
 
   <button type="button" id="openCam" onclick="cameraStart(); hideButton()"> Kamera öffnen </button>
+
+  <button type="button" id="hideUI" onclick="hideallbuttons()"> Verstecke Elemente</button>
 <div id="cert">
         <div class="cert_title" id="certTitle"></div>
 <!--        <div class="name" id="name"></div>-->
