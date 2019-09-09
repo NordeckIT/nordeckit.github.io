@@ -47,11 +47,11 @@ cameraTrigger.onclick = function() {
 
 //hides all top buttons
 UIhide.onclick = function () {
-    document.getElementById("hideUI").classList.add("hide");
-    document.getElementById("openCam").classList.add("hide");
-    document.getElementById("berechnen").classList.add("hide");
-    document.getElementById("camera--view").style.paddingTop="63px";
-    document.getElementById("camera--output").style.paddingTop="63px";
+    document.getElementById("hideUI").classList.add("invisible");
+    document.getElementById("openCam").classList.add("invisible");
+    document.getElementById("berechnen").classList.add("invisible");
+/*    document.getElementById("camera--view").style.paddingTop="63px";
+    document.getElementById("camera--output").style.paddingTop="63px";*/
 
 };
 
